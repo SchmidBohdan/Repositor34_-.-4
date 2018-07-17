@@ -1,0 +1,15 @@
+<% if @products.blank? %>
+  <p>There are not products</p>
+
+<% else %>
+  <p>These are the current country in system</p>
+
+  <ul id="products">
+    <% @products.each do |c| %>
+      <li><% link_to c.title, {:action => 'show', :id => c.id} -%></li>
+    <% end %>
+  </ul>
+
+<% end %>
+
+<p><%= link_to "Add new Product", {:action => 'new'}%></p>
