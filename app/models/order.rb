@@ -1,7 +1,7 @@
 class Order < ApplicationRecord
-  has_many users
-  has_and_belongs_to_many :product
+  belongs_to :user
+  # has_and_belongs_to_many :product
 
-  validates_presence_of :title
-  validates_numericality_of :price, :message=>"Error Message"
+  validates :deliveryAddress, presence: true, length: {minimum: 10 }
+
 end

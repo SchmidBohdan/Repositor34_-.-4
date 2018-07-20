@@ -1,0 +1,9 @@
+<h1><%= @country.title -%></h1>
+
+<ul>
+
+  <%= @country.products.find_each do |c| %>
+  <li><%= link_to c.title, :action => "show", :id => c.id  -%></li>
+<% end %>
+
+</ul>

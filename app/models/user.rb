@@ -1,5 +1,5 @@
 class User < ApplicationRecord
- belongs_to order
+ has_many :orders
 
  validates :name, presence: true, length: {minimum: 10 }
  validates :surname, presence: true, length: {minimum: 10 }

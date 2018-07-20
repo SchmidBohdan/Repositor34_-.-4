@@ -1,3 +1,11 @@
+
+<ul id="categories">
+  <% Category.all.each do |c| %>
+  <li><%= link_to c.title, :action => "show_categories", :id => c.id %></li>
+</ul>
+  <% end %>
+
+
 <% if @products.blank? %>
   <p>There are not products</p>
 
@@ -6,7 +14,13 @@
 
   <ul id="products">
     <% @products.each do |c| %>
-      <li><% link_to c.title, {:action => 'show', :id => c.id} -%></li>
+      <li>
+        <%= link_to c.title, {:action => 'show', :id => c.id} -%>
+<!--      modification with Edit-->
+        <b> <%= link_to 'Edit', :action => "edit", :id => c.id %></b>
+        <b> <%= link_to 'Delete', {:action => "delete", :id => c.id},
+        :confirm => "Are you sure you want to remove this item?" %></b>
+      </li>
     <% end %>
   </ul>
 

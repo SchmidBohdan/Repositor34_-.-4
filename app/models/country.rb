@@ -1,6 +1,7 @@
 class Country < ApplicationRecord
-  belongs_to :product
 
-  validates :title
+  has_many :products
+
+  validates :title, presence: true, length: {minimum: 4 }
 
 end

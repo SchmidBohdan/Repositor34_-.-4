@@ -12,6 +12,7 @@ class ProductController < ApplicationController
     @product = Product.new
     @countries = Country.all
     @categories = Category.all
+
   end
 
   def create
@@ -22,6 +23,7 @@ class ProductController < ApplicationController
     else
       @countries = Country.all
       @categories = Category.all
+
       render :action => 'new'
     end
   end
@@ -32,8 +34,9 @@ class ProductController < ApplicationController
 
   def edit
     @product = Product.find(params["id"])
-    @categories = Category.all
     @countries = Country.all
+    @categories = Category.all
+
   end
 
   def update
@@ -44,6 +47,7 @@ class ProductController < ApplicationController
     else
       @countries = Country.all
       @categories = Category.all
+
       render :action => 'edit'
     end
   end
@@ -59,7 +63,7 @@ class ProductController < ApplicationController
   end
 
   def show_categories
-    @category = Category.find(params[:id])
+    @category = Category.find(4)
   end
 
   def show_countries
