@@ -2,9 +2,9 @@
 <ul id="categories">
   <% Category.all.each do |c| %>
   <li><%= link_to c.title, :action => "show_categories", :id => c.id %></li>
-</ul>
-  <% end %>
 
+  <% end %>
+</ul>
 
 <% if @products.blank? %>
   <p>There are not products</p>
@@ -12,6 +12,7 @@
 <% else %>
   <p>These are the current country in system</p>
 
+  <div id="style_products_list">
   <ul id="products">
     <% @products.each do |c| %>
       <li>
@@ -23,7 +24,7 @@
       </li>
     <% end %>
   </ul>
-
+  </div>
 <% end %>
 
 <p><%= link_to "Add new Product", {:action => 'new'}%></p>

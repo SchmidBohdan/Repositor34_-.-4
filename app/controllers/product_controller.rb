@@ -1,5 +1,7 @@
 class ProductController < ApplicationController
 
+  layout 'standart'
+
   def list
     @products = Product.all
   end
@@ -63,7 +65,7 @@ class ProductController < ApplicationController
   end
 
   def show_categories
-    @category = Category.find(4)
+    @category = Category.find(params[:id])
   end
 
   def show_countries
