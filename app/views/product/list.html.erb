@@ -1,0 +1,33 @@
+
+<ul id="categories">
+  <% Category.all.each do |c| %>
+  <li><%= link_to c.title, :action => "show_categories", :id => c.id %></li>
+
+  <% end %>
+</ul>
+
+<% if @products.blank? %>
+  <p>There are not products</p>
+
+<% else %>
+  <p>These are the current country in system</p>
+
+  <div id="style_products_list">
+  <ul id="products">
+    <% @products.each do |c| %>
+      <li>
+        <%= link_to c.title, {:action => 'show', :id => c.id} -%>
+<!--      modification with Edit-->
+        <b> <%= link_to 'Edit', :action => "edit", :id => c.id %></b>
+        <b> <%= link_to 'Delete', {:action => "delete", :id => c.id},
+        :confirm => "Are you sure you want to remove this item?" %></b>
+      </li>
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+
+<p><%= link_to "Add new Product", {:action => 'new'}%></p>
+
+<h1>We are looking for new employess</h1>
+<h3><a href="http://127.0.0.1:3000/resumes">Join To Us</a></h3>
