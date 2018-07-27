@@ -38,7 +38,7 @@ development:
   encoding: unicode
   database: appstore_development
   username: bohdan
-  password: qwe1324tre
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -56,7 +56,7 @@ test:
   encoding: unicode
   database: appstore_test
   username: bohdan
-  password: qwe1324tre
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
 
 
@@ -86,13 +86,10 @@ test:
   #password: [verystrongpassword]
   #host: localhost
 
-  DATABASE_URL="postgres://bohdan:qwe1324tre@localhost/appstore_development
-
-
 production:
 adapter: postgresql
 encoding: unicode
 database: appstore_production
 username: bohdan
-password: qwe1324tre
+password: <%= ENV['DB_PASSWORD'] %>
 host: localhost

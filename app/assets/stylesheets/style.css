@@ -52,8 +52,6 @@ ul#categories li {
     padding-left: 5px;
 }
 
-div#style_products_list {
-    width: 50%;
-    height: 100px;
+div#style_products_list{
     background-color: crimson;
 }
