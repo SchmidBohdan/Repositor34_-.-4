@@ -86,6 +86,8 @@ test:
   #password: [verystrongpassword]
   #host: localhost
 
+  DATABASE_URL="postgres://bohdan:qwe1324tre@localhost/appstore_development
+
 
 production:
 adapter: postgresql
