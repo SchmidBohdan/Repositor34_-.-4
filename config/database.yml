@@ -19,12 +19,20 @@
   #host: localhost
   #socket: MySQL
 
+
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
   password: qwe1324tre
   host: localhost
+
+#default: &default
+#  adapter: postgresql
+#  encoding: unicode
+#  pool: 5
+#  host: localhost
+
 
 
 #development:
@@ -39,8 +47,9 @@ development:
   encoding: unicode
   database: appstore_development
   username: bohdan
-  password: qwe1324tre
-  host: localhost
+
+
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -57,7 +66,6 @@ test:
   encoding: unicode
   database: appstore_test
   username: bohdan
-  password: qwe1324tre
   host: localhost
 
 
@@ -92,5 +100,4 @@ adapter: postgresql
 encoding: unicode
 database: appstore_production
 username: bohdan
-password: qwe1324tre
 host: localhost
