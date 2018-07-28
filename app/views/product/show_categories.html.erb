@@ -1,0 +1,15 @@
+<h1><%= @category.title -%></h1>
+
+<ul>
+
+  <% if @category.products.blank? %>
+    <p>There are not products</p>
+
+   <% else %>
+
+    <%= @category.products.find_each do |c| %>
+    <li><%= link_to c.title, :action => "show", :id => c.id  -%></li>
+   <% end %>
+
+  <% end %>
+</ul>

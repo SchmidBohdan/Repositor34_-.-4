@@ -1,0 +1,19 @@
+<h1>Add Product</h1>
+
+<%= form_tag :action =>  'create' do %>
+
+  <p><label for="product_title">Title</label>:
+  <%= text_field 'products', 'title' %></p>
+  <p><label for="product_price">Price</label>:
+  <%= text_field 'products', 'price' %></p>
+
+  <p><label for="product_category_id">Category</label>:
+  <%= collection_select(:products, :category_id, @categories, :id, :title, prompt: true) %></p>
+
+  <p><label for="product_country_id">Country</label>:
+  <%= collection_select(:products, :country_id, @countries, :id, :title, prompt: true) %><p>
+   <br>
+  <%= submit_tag "Create" %>
+<% end -%>
+
+<%= link_to 'Back', {:action => 'list'} %>
