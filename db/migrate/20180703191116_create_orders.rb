@@ -1,7 +1,7 @@
 class CreateOrders < ActiveRecord::Migration[5.1]
   def change
 
-    drop_table :orders
+    #drop_table :orders
 
     create_table :orders do |t|
 

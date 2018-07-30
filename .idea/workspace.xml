@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9210b52e-158f-4d83-9b6b-70af2a126e3a" name="Default Changelist" comment="" />
+    <list default="true" id="9210b52e-158f-4d83-9b6b-70af2a126e3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180703190504_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180703190504_create_products.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -15,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Repositor_develop_branch@Development__Repositor_develop_branch.rcov" NAME="Development: Repositor_develop-branch Coverage Results" MODIFIED="1532942792518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Repositor_develop-branch" />
+    <SUITE FILE_PATH="coverage/Repositor_develop_branch@Development__Repositor_develop_branch.rcov" NAME="Development: Repositor_develop-branch Coverage Results" MODIFIED="1532943476005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Repositor_develop-branch" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="77400284">
@@ -34,7 +36,7 @@
           <entry key="Procfile" value="2" />
           <entry key="Rakefile" value="1" />
           <entry key="erb" value="3" />
-          <entry key="rb" value="8" />
+          <entry key="rb" value="9" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -42,7 +44,7 @@
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="3" />
-          <entry key="Ruby" value="11" />
+          <entry key="Ruby" value="12" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -93,11 +95,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="-82">
               <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180703190504_create_products.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -109,11 +120,6 @@
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/product/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -150,6 +156,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20180703190504_create_products.rb" />
       </list>
     </option>
   </component>
@@ -195,6 +202,17 @@
               <item name="Repositor_develop-branch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Repositor_develop-branch" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Repositor_develop-branch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Repositor_develop-branch" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Repositor_develop-branch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Repositor_develop-branch" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="migrate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,23 +354,23 @@
       <updated>1532798330941</updated>
       <workItem from="1532798332987" duration="735000" />
       <workItem from="1532874663959" duration="10615000" />
-      <workItem from="1532936982190" duration="3174000" />
+      <workItem from="1532936982190" duration="4074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14524000" />
+    <option name="totallyTimeSpent" value="15424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85155624" visible="true" weight="0.3627451" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85155624" visible="true" weight="0.3627451" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,8 +469,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-82">
           <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180703190504_create_products.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
