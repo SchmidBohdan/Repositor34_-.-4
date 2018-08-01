@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=pgAdmin 4
+Exec=/home/bohdan/pgAdmin4/pgAdmin4/lib/python3.6/site-packages/pgadmin4/pgAdmin4.sh
+Icon=/home/bohdan/pgAdmin4/pgAdmin4/lib/python3.6/site-packages/pgadmin4/pgadmin.svg
+Type=Application
+Categories=Database
+Terminal=fals
